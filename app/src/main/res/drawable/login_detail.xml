@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/colorLoginDetail"/>
+        <size android:height="01dp" android:width="124dp"/>
+        <position android:gravity="center"/>
+    </shape>
