@@ -5,21 +5,19 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
 import com.example.digitalhousefoods.R
+import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        //btnRegister.setOnClickListener {
-          //  callMain()
-        //}
 
-    }
+        btnLoginRegister.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
-    fun callMain() {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
     }
 
 }
