@@ -6,4 +6,5 @@
     <color name="colorButtons">#FF5252</color>
     <color name="colorDetailText">#FF47525E</color>
     <color name="colorLoginDetail">#C0CCDA</color>
+    <color name="background_recycler">#d6d7d7</color>
 </resources>

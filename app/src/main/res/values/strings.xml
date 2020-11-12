@@ -17,5 +17,17 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="restaurant1">"Tony Roma's"</string>
+    <string name="restaurant2">"Aoyama - Moema"</string>
+    <string name="restaurant3">"Outback - Moema"</string>
+    <string name="restaurant4">"Sí Señor!"</string>
+    <string name="endereco1">"Av. Lavandisca, 717 - Indianápolis, São Paulo"</string>
+    <string name="endereco2">"Alameda dos Arapanés, 532 - Moema, São Paulo"</string>
+    <string name="endereco3">"Av. Moaci, 187 - Moema, São Paulo"</string>
+    <string name="endereco4">"Alameda Jauaperi, 626 - Moema, São Paulo"</string>
+    <string name="horario1">"Fecha às 22:00"</string>
+    <string name="horario2">"Fecha às 00:00"</string>
+    <string name="horario3">"Fecha às 00:00"</string>
+    <string name="horario4">"Fecha às 01:00"</string>
 
 </resources>
