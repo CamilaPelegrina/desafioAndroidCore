@@ -3,4 +3,24 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="bottom"
+        android:padding="14dp"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:background="@drawable/image4"
+        android:text="@string/receita"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/descricao"
+        android:textSize="18sp"
+        android:layout_margin="11dp"
+        android:textColor="#8492A6">
+
+    </TextView>
+
 </LinearLayout>

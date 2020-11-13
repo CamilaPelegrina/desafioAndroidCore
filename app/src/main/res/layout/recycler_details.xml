@@ -12,12 +12,12 @@
         android:id="@+id/txtHeader"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:gravity="bottom"
         android:padding="14dp"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
-        android:gravity="bottom"
-        tools:text="Nome Restaurante"
-        tools:background="@drawable/image1" />
+        tools:background="@drawable/image1"
+        tools:text="Nome Restaurante" />
 
     <androidx.core.widget.NestedScrollView
         android:orientation="vertical"
@@ -35,7 +35,7 @@
                 android:padding="14dp"
                 android:text="@string/pratos_principais"
                 android:textColor="#5A6978"
-                android:textSize="36sp" />
+                android:textSize="30sp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerHome"
