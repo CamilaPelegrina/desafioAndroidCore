@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="ui.FragmentHome"
-    android:backgroundTint="@color/background_recycler">
+    android:background="@color/background_recycler">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerHome"

@@ -29,5 +29,9 @@
     <string name="horario2">"Fecha às 00:00"</string>
     <string name="horario3">"Fecha às 00:00"</string>
     <string name="horario4">"Fecha às 01:00"</string>
+    <string name="imagem_restaurante">Imagem Restaurante</string>
+    <string name="pratos_principais">Pratos Principais</string>
+    <string name="descricao">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</string>
+    <string name="receita">Salada com molho Gengibre</string>
 
 </resources>

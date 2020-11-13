@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 import com.example.digitalhousefoods.ui.model.Restaurant
 
-class RestaurantAdapter(private val listRestaurant: List<Restaurant>) :
+class RestaurantAdapter(private val listRestaurant: MutableList<Restaurant>) :
     RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_restaurant, parent, false)
@@ -23,7 +23,7 @@ class RestaurantAdapter(private val listRestaurant: List<Restaurant>) :
         holder.txtHorarios.setText(listRestaurant[position].horario)
 
         holder.itemView.setOnClickListener {
-            MainActivity.fm.beginTransaction().replace(R.id.fragmentContainer, FragmentCSecondary(), null)
+            MainActivity.fm.beginTransaction().replace(R.id.fragmentContainer, FragmentDetails(), null)
                 .addToBackStack(null).commit()
         }
     }

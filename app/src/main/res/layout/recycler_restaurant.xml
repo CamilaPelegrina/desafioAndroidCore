@@ -9,6 +9,7 @@
     android:elevation="10dp">
 
     <LinearLayout
+        android:id="@+id/Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -16,8 +17,9 @@
         <ImageView
             android:id="@+id/imgRecyclerImage"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="fitXY" />
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/imagem_restaurante" />
 
         <LinearLayout
             android:layout_width="match_parent"

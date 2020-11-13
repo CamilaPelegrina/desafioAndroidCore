@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         lateinit var fm : FragmentManager
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         fm = supportFragmentManager
         fm.beginTransaction().add(R.id.fragmentContainer, FragmentHome(), null).commit()
+
     }
 }
