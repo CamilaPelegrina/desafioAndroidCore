@@ -23,7 +23,7 @@ class DetailsAdapter(private val listReceitas: MutableList<Receitas>) :
         holder.itemView.setOnClickListener {
             MainActivity.fm.beginTransaction()
                 .replace(R.id.fragmentContainer, FragmentReceita(), null)
-                .addToBackStack(null).commit()
+                    .addToBackStack(null).commit()
         }
     }
 

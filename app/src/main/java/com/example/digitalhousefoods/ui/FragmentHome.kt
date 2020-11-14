@@ -4,19 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 import com.example.digitalhousefoods.ui.model.Restaurant
 
-
-
 class FragmentHome : Fragment() {
     private var listRestaurant = mutableListOf<Restaurant>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        val view: View = inflater.inflate(R.layout.fragment_home, container, false)
+
+        return  view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,5 +39,4 @@ class FragmentHome : Fragment() {
         listRestaurant.add(Restaurant(R.drawable.image5,R.string.restaurant3, R.string.endereco3, R.string.horario3))
         listRestaurant.add(Restaurant(R.drawable.image3,R.string.restaurant4, R.string.endereco4, R.string.horario4))
         }
-
 }

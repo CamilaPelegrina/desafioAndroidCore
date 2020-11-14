@@ -8,13 +8,23 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalhousefoods.R
 import com.example.digitalhousefoods.ui.model.Restaurant
+import kotlin.properties.Delegates
 
 class RestaurantAdapter(private val listRestaurant: MutableList<Restaurant>) :
     RecyclerView.Adapter<RestaurantAdapter.RestaurantViewHolder>() {
+
+    private var txtName by Delegates.notNull<Int>()
+    private var imageView by Delegates.notNull<Int>()
+    private var listDados = ArrayList<Int>()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.recycler_restaurant, parent, false)
+
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.recycler_restaurant, parent, false)
+
         return RestaurantViewHolder(view)
     }
+
 
     override fun onBindViewHolder(holder: RestaurantViewHolder, position: Int) {
         holder.imageView.setImageResource(listRestaurant[position].image)
@@ -22,9 +32,11 @@ class RestaurantAdapter(private val listRestaurant: MutableList<Restaurant>) :
         holder.txtLocation.setText(listRestaurant[position].endereco)
         holder.txtHorarios.setText(listRestaurant[position].horario)
 
+
         holder.itemView.setOnClickListener {
+
             MainActivity.fm.beginTransaction().replace(R.id.fragmentContainer, FragmentDetails(), null)
-                .addToBackStack(null).commit()
+             .addToBackStack(null).commit()
         }
     }
 
@@ -38,4 +50,6 @@ class RestaurantAdapter(private val listRestaurant: MutableList<Restaurant>) :
         var txtLocation: TextView = itemView.findViewById(R.id.txtRecyclerRestaurantEndereco)
         var txtHorarios: TextView = itemView.findViewById(R.id.txtRecyclerRestaurantHorario)
     }
+
 }
+

@@ -6,4 +6,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/background_recycler"
-    tools:context=".ui.MainActivity" />
+    tools:context=".ui.MainActivity"
+    android:theme="@style/Theme.AppCompat.Light"/>

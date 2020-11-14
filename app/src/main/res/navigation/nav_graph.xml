@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerActivity">
+
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.digitalhousefoods.ui.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" >
+        <action
+            android:id="@+id/action_registerActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.digitalhousefoods.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </activity>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.digitalhousefoods.ui.FragmentHome"
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentDetails"
+            app:destination="@id/fragmentDetails" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.digitalhousefoods.ui.LoginActivity"
+        android:label="LoginActivity" >
+        <action
+            android:id="@+id/action_loginActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_loginActivity_to_registerActivity"
+            app:destination="@id/registerActivity" />
+    </activity>
+    <fragment
+        android:id="@+id/fragmentDetails"
+        android:name="com.example.digitalhousefoods.ui.FragmentDetails"
+        android:label="FragmentDetails" >
+        <action
+            android:id="@+id/action_fragmentDetails_to_fragmentReceita"
+            app:destination="@id/fragmentReceita" />
+        <action
+            android:id="@+id/action_fragmentDetails_to_fragmentHome"
+            app:destination="@id/fragmentHome"
+            app:popUpTo="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReceita"
+        android:name="com.example.digitalhousefoods.ui.FragmentReceita"
+        android:label="FragmentReceita" >
+        <action
+            android:id="@+id/action_fragmentReceita_to_fragmentDetails"
+            app:destination="@id/fragmentDetails"
+            app:popUpTo="@id/fragmentDetails" />
+    </fragment>
+</navigation>
